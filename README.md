@@ -1,6 +1,6 @@
 # erc721-watcher
 
-First try the [erc721 demo in stack orchestrator](https://github.com/cerc-io/stack-orchestrator/tree/main/app/data/stacks/erc721) to quickly get started. Advanced users can see [here](/docs/README.md) for instructions on setting up a local environment by hand. 
+First try the [erc721 demo in stack orchestrator](https://github.com/cerc-io/stack-orchestrator/tree/main/app/data/stacks/erc721) to quickly get started. Advanced users can see [here](https://github.com/cerc-io/watcher-ts/blob/main/docs/README.md) for instructions on setting up a local environment by hand.
 
 ## Setup
 
@@ -37,7 +37,7 @@ Export the address of the deployed token to a shell variable for later use:
 
 ```bash
 export NFT_ADDRESS="0xNFTAddress"
-  ```
+```
 
 Run the following GQL mutation in generated watcher GraphQL endpoint http://127.0.0.1:3006/graphql
 
@@ -302,4 +302,4 @@ yarn checkpoint create --address $NFT_ADDRESS
 
 - The state should have auto indexed data and also custom property `transferCount` according to code in [hooks](./src/hooks.ts) file `handleEvent` method.
 
-For more `yarn` sub-commands available, see the [CLI guide](/docs/cli.md) 
+For more `yarn` sub-commands available, see the [CLI guide](https://github.com/cerc-io/watcher-ts/blob/main/docs/cli.md)
