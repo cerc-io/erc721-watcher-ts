@@ -289,7 +289,7 @@ yarn nft:transfer --nft $NFT_ADDRESS --from $SIGNER_ADDRESS --to $RECIPIENT_ADDR
 
 - Run the `transferCount` entity query again with the latest blockHash. The updated count should be returned.
 
-- After the `diff` block has been created (can check if event block number pruned in yarn server log), create a checkpoint using CLI in `packages/erc721-watcher`:
+- After the `diff` block has been created (can check if event block number pruned in yarn server log), create a checkpoint using CLI in `packages/erc721-watcher-ts`:
 
 ```bash
 yarn checkpoint create --address $NFT_ADDRESS
